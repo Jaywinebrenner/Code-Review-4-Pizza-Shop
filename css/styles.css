@@ -10,3 +10,36 @@ h1{
 h3{
   font-family: 'Creepster', cursive;
 }
+
+.header{
+  background-color: #8a0303;
+  color: white;
+  text-align: center;
+}
+
+img{
+  height: 300px;
+  width: auto;
+}
+
+
+#half{
+  font-family: 'Creepster', cursive;
+  font-size: 3rem;
+}
+
+#submit-button{
+  background-color: #8a0303;
+}
+
+#size-div{
+  margin-bottom: 35px;
+}
+
+#veggies-div{
+margin-bottom: 35px;
+}
+
+#button-div{
+  margin-bottom: 35px;
+}

@@ -6,23 +6,24 @@ function Pizza (size, veggies){
   this.price = 0;
   }
 
+
 Pizza.prototype.costCalulator = function(size, veggies){
-    if(this.veggies === "undefined"){
-      return 0;
-    }
-    this.veggies.forEach(function(){
-      this.price += 2
+    // if(this.veggies === "undefined"){
+    //   return 0;
+    // }
+    this.veggies.forEach(function(veggies){
+      this.price += 2;
+      console.log(this.price);
     });
     if(this.size === "12 Inch"){
       this.price += 6;
     } else if (this.size === "6 Inch"){
       this.price += 4;
-    } else if(this.price += "2 Inch"){
+    } else if(this.price === "2 Inch"){
       this.price += 2;
     } else {
       return this.price;
     }
-
 
 };
 
@@ -41,22 +42,16 @@ $("#inputForm").submit(function(event){
       var sizeInput= $("#size").val();
       console.log("pizza size" , sizeInput);
 
-      var veggiesInputs = $("#veggies:checked").val();
-      console.log(veggiesInputs);
       var vegArray = [];
-      veggiesInputs.forEach(function(veg){
-        vegArray.push(veg.val());
-});
+      $("input:checkbox[name=veggies]:checked").each(function(){
+      var inputVeggies = $(this).val();
+       vegArray.push(inputVeggies);
 
-
-
-// for (var i = 0; i <= veggiesInputs.length; i++) {
-//     vegArray.push(veggiesInputs[i].val());
-// }
-
+    });
 
     let newPizza = new Pizza (sizeInput, vegArray)
-    console.log(vegArray);
+    newPizza.costCalulator();
+
 
 
 });

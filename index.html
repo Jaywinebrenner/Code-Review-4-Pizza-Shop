@@ -12,13 +12,14 @@
 <body>
   <div class="header jumbotron">
     <h1>Discount Dracula's Pizza Parlor</h1>
-  <h2>Sucking your prices in HALF!</h2>
+  <h2>Sucking your prices in <span id="half">HALF!</span></h2>
+  <!-- <img id="dracula" src="img/dracula.png" alt=""> -->
   </div>
 
   <div class="container">
 
     <form id="inputForm" action="index.html" method="post">
-      <div class="size-div">
+      <div id="size-div">
         <h3>What Size of Pizza would you like?</h3>
         <select class="form-control" id="size">
           <option>12 Inch</option>
@@ -27,7 +28,7 @@
         </select>
       </div>
 
-      <div class="veggies-div">
+      <div id="veggies-div">
         <h3>Pick your veggies!</h3>
         <input id="veggies" type="checkbox" name="veggies" value="Mushrooms" /> Mushrooms
         <input id="veggies" type="checkbox" name="veggies" value="guano" /> Guano
@@ -37,9 +38,9 @@
         <input id="veggies" type="checkbox" name="veggies" value="Garlic" /> Garlic
       </div>
 
-      <div class="button-div">
+      <div id="button-div">
         <h3>Calculate that pizza cost!</h3>
-        <button type="submit" class="btn btn-primary">Enter</button>
+        <button id="submit-button"type="submit" class="btn btn-primary btn-lg">Enter</button>
       </div>
 
     </form>
