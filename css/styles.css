@@ -1,5 +1,6 @@
 #show{
   display: none;
+  text-align: center;
 }
 
 h1{
@@ -39,7 +40,7 @@ h3{
   position: relative;
 }
 
-#sauce-div{ 
+#sauce-div{
   margin-bottom: 35px;
   position: relative;
 }
@@ -68,4 +69,16 @@ margin-bottom: 35px;
 
 .container{
   position: relative;
+}
+
+#result-span{
+    font-family: 'Creepster', cursive;
+}
+p{
+  font-size: 2rem;
+}
+
+#price-p{
+  font-family: 'Creepster', cursive;
+  font-size: 4rem;
 }
