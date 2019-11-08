@@ -9,8 +9,37 @@
   <title></title>
 </head>
 <body>
+  <div class="header jumbotron">
+    <h1>PIZZA CITY</h1>
+  </div>
+
+  <div class="container">
+
+    <form id="inputForm" action="index.html" method="post">
+      <div class="size-div">
+        <h1>What Size of Pizza would you like?</h1>
+        <select class="form-control" id="size">
+          <option>12 Inch</option>
+          <option>6 Inch</option>
+          <option>2 Inch</option>
+        </select>
+
+      </div>
+
+      <div class="veggies-div">
+        <h1>Pick your veggies!</h1>
+        <input id="veggies" type="checkbox" name="veggies" value="Mushrooms" /> Mushrooms
+        <input id="veggies" type="checkbox" name="veggies" value="Peppers" /> Peppers
+        <input id="veggies" type="checkbox" name="veggies" value="Okra" /> Okra
+        <input id="veggies" type="checkbox" name="veggies" value="Carrtos" /> Carrots
+        <input id="veggies" type="checkbox" name="veggies" value="Pumpkin" /> Pumpkin
+        <input id="veggies" type="checkbox" name="veggies" value="Mint" /> Mint
+      </div>
+      <button type="submit" class="btn btn-primary">Primary</button>
+    </form>
 
 
+  </div>
 
 
 </body>
