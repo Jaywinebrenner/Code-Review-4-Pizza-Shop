@@ -8,6 +8,7 @@ function Pizza (size, sauce, veggies){
   }
 
 Pizza.prototype.costCalulator = function(size, sauce, veggies){
+
   if (this.size === "undefined"){
     price += 0;
   }
@@ -20,24 +21,25 @@ Pizza.prototype.costCalulator = function(size, sauce, veggies){
   if (this.size === "2 Inch") {
     this.price += 4;
   }
-console.log(this.sauce);
-  if (this.sauce == "Tomato") {
+
+
+  if (this.sauce === "Tomato") {
     this.price += 3;
-    console.log(this.price);
   }
-  if (this.sauce == "Liquid Larynx" || "Bat Blood") {
+  if (this.sauce === "Pesto") {
+    this.price += 3;
+  }
+  if (this.sauce === "Bat Blood") {
     this.price += 5;
-    console.log(this.price);
+  }
+  if (this.sauce === "Liquid Larynx") {
+    this.price += 6;
+    console.log(this.sauce);
   }
   if(this.sauce === "Extra Spicy") {
     this.price += 8;
-    console.log(this.price);
-
   }
   //
-  // if (this.size === "2 Inch") {
-  //   this.price += 4;
-  // }
   // this.veggies.forEach(function(veggies){
   //   this.price += 2;
   //   });
