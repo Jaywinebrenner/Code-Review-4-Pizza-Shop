@@ -6,6 +6,10 @@ h1{
   font-family: 'Creepster', cursive;
   font-size: 5rem;
 }
+h2{
+  font-family: cursive;
+  font-style: italic;
+}
 
 h3{
   font-family: 'Creepster', cursive;
@@ -15,11 +19,9 @@ h3{
   background-color: #8a0303;
   color: white;
   text-align: center;
-}
-
-img{
-  height: 300px;
-  width: auto;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 
@@ -34,7 +36,14 @@ img{
 
 #size-div{
   margin-bottom: 35px;
+  position: relative;
 }
+
+#sauce-div{ 
+  margin-bottom: 35px;
+  position: relative;
+}
+
 
 #veggies-div{
 margin-bottom: 35px;
@@ -42,4 +51,21 @@ margin-bottom: 35px;
 
 #button-div{
   margin-bottom: 35px;
+
+}
+
+#floating-pizza{
+  height: 50px;
+  width: auto;
+  float: right;
+  top: 300px;
+
+}
+
+#blood-dribble{
+  position: absolute;
+}
+
+.container{
+  position: relative;
 }
