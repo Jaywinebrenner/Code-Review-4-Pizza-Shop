@@ -1,11 +1,22 @@
 #show{
   display: none;
   text-align: center;
+  background-color: #8a0303;
+  color: white;
+}
+
+#show2{
+  display: none;
+  text-align: center;
+  background-color: #8a0303;
+  color: white;
 }
 
 h1{
   font-family: 'Creepster', cursive;
   font-size: 5rem;
+  margin-bottom: 0;
+  line-height: 65px;
 }
 h2{
   font-family: cursive;
@@ -14,6 +25,7 @@ h2{
 
 h3{
   font-family: 'Creepster', cursive;
+  font-size: 1.7rem;
 }
 
 .header{
@@ -81,4 +93,9 @@ p{
 #price-p{
   font-family: 'Creepster', cursive;
   font-size: 4rem;
+  margin-bottom: 0;
+}
+
+#div-container{
+  margin-bottom: 20px;
 }
