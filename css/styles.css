@@ -1,3 +1,12 @@
 #show{
   display: none;
 }
+
+h1{
+  font-family: 'Creepster', cursive;
+  font-size: 5rem;
+}
+
+h3{
+  font-family: 'Creepster', cursive;
+}
