@@ -12,7 +12,6 @@ Pizza.prototype.garlic = function(veggies){
     this.price = 0;
     $("#show2").show();
     $("#show").toggle();
-
   }
 
 }
@@ -62,8 +61,14 @@ Pizza.prototype.costCalulator = function(size, sauce, veggies){
 Pizza.prototype.showCost = function(price){
   $("#show").show();
   $("#price-p").html("$" + this.price);
-
 };
+
+// Pizza.prototyple.garlicReset = function(){
+//   this.size = 0;
+//   this.sauce = 0;
+//   this.veggies= 0;
+//   this.price = 0;
+// }
 
 
 $(document).ready(function(){
@@ -84,6 +89,9 @@ $("#inputForm").submit(function(event){
     newPizza.costCalulator(sizeInput, sauceInput, vegArray);
     newPizza.showCost();
     newPizza.garlic();
+    // $("#garlic-button").click(function(){
+    //   myPizza.garlicReset();
+    // })
 
 
 });
