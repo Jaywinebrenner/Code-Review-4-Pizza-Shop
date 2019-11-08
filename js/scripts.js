@@ -6,7 +6,16 @@ function Pizza (size, sauce, veggies){
   this.veggies= veggies;
   this.price = 0;
   }
+Pizza.prototype.garlic = function(veggies){
+  if(this.veggies.includes("Garlic")){
+    console.log(this.veggie);
+    this.price = 0;
+    $("#show2").show();
+    $("#show").toggle();
 
+  }
+
+}
 
 Pizza.prototype.costCalulator = function(size, sauce, veggies){
 
@@ -38,6 +47,8 @@ Pizza.prototype.costCalulator = function(size, sauce, veggies){
   if(this.sauce === "Extra Spicy") {
     this.price += 8;
   }
+
+
 
   let veggieVariable= 0;
   this.veggies.forEach(function(veggies){
@@ -72,6 +83,7 @@ $("#inputForm").submit(function(event){
 
     newPizza.costCalulator(sizeInput, sauceInput, vegArray);
     newPizza.showCost();
+    newPizza.garlic();
 
 
 });
