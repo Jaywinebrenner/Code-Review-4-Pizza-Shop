@@ -61,6 +61,7 @@ Pizza.prototype.costCalulator = function(size, sauce, veggies){
 Pizza.prototype.showCost = function(price){
   $("#show").show();
   $("#price-p").html("$" + this.price);
+  $("#blood-hide").show();
 };
 
 // Pizza.prototyple.garlicReset = function(){

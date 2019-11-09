@@ -88,6 +88,17 @@ margin-bottom: 35px;
   left: 350px;
   z-index: -1;
 }
+#blood2{
+  position: absolute;
+  height: 250px;
+  width: auto;
+  left: 150px;
+  z-index: -1;
+  transform: scaleX(-1);
+}
+#blood-hide{
+  display: none;
+}
 
 .container{
   position: relative;
