@@ -1,27 +1,19 @@
-# APP NAME
+# Discount Dracula's Pizza Parlor Web App
 
 ## By **Jay Winebrenner**
 
 ### Description
 
-Description
+A web app that will calculate the cost of a pizza at Discount Dracula's Pizza Parlor
 
 ### Setup/Installation Requirements
 
-#### Zip:
+Download from Github and open in browser
 
 
+### Support and Contact:
 
-### Specifications:
-
-|Input|Output|
-|---|---|
-|Player A rolls a 1| Turn over, Turn Total is 0, Total Score is 0, Player B's turn.|
-|Player B rolls a 2.|Player B's Turn Score is added by 2, they can keep rolling or add 2 to their Total Score. Total Score is still 0, they decide to roll again.|
-|Player B rolls again, this time a 3.|Player B's dice value is added to Turn Score, making it equal 5. They decide to add their Turn Score to their Total Score, ending their turn. Player B's Total Score is now 5.|
-|Player A rolls again, this time a 6.|Player A's Turn Score is now 6. They decide to roll again. Player A's Total Score is still 0.|
-|Player A rolls again, this time a 1.|Player A's Turn Score is eliminated. Total Score is 0. It is now Player B's turn.|
-|Player B's Turn Total reaches 100.|Player B wins game.|
+Feel free to get in touch about anything at any time. jaywinebrenner@gmail.com
 
 ### Technologies Used
 
@@ -30,3 +22,9 @@ Description
  - JavaScript
  - JQuery
  - Bootstrap
+
+### License
+
+This software is licensed under the MIT license
+
+Copyright (c) 2019 Jay Winebrenner
