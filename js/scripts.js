@@ -1,5 +1,3 @@
-
-
 function Pizza (size, sauce, veggies){
   this.size = size;
   this.sauce = sauce;
@@ -13,8 +11,7 @@ Pizza.prototype.garlic = function(veggies){
     $("#show2").show();
     $("#show").toggle();
   }
-
-}
+};
 
 Pizza.prototype.costCalulator = function(size, sauce, veggies){
 
@@ -47,8 +44,6 @@ Pizza.prototype.costCalulator = function(size, sauce, veggies){
     this.price += 8;
   }
 
-
-
   let veggieVariable= 0;
   this.veggies.forEach(function(veggies){
     veggieVariable += 2;
@@ -63,14 +58,6 @@ Pizza.prototype.showCost = function(price){
   $("#price-p").html("$" + this.price);
   $("#blood-hide").show();
 };
-
-// Pizza.prototyple.garlicReset = function(){
-//   this.size = 0;
-//   this.sauce = 0;
-//   this.veggies= 0;
-//   this.price = 0;
-// }
-
 
 $(document).ready(function(){
 $("#inputForm").submit(function(event){
@@ -90,9 +77,10 @@ $("#inputForm").submit(function(event){
     newPizza.costCalulator(sizeInput, sauceInput, vegArray);
     newPizza.showCost();
     newPizza.garlic();
-    // $("#garlic-button").click(function(){
-    //   myPizza.garlicReset();
-    // })
+
+    $("#garlic-button").click(function() {
+       location.reload(true);
+});
 
 
 });

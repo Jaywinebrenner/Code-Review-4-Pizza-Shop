@@ -18,7 +18,7 @@
 }
 
 #garlic-button{
-
+ background-color: black
 }
 
 h1{
@@ -83,9 +83,9 @@ margin-bottom: 35px;
 
 #blood{
   position: absolute;
-  height: 400px;
+  height: 370px;
   width: auto;
-  left: 350px;
+  left: 420px;
   z-index: -1;
 }
 #blood2{
@@ -112,10 +112,11 @@ p{
 }
 
 #size{
-  width: 400px;
+  width: 300px;
+  padding-top: 34px;
 }
 #sauce{
-  width: 600px;
+  width: 400px;
 }
 
 #price-p{
@@ -126,4 +127,13 @@ p{
 
 #div-container{
   margin-bottom: 20px;
+}
+
+#discount-dracula{
+  height: 300px;
+  width: auto;
+  float: left;
+
+  left: 750px;
+  top: 300px;
 }
