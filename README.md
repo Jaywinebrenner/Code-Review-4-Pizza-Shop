@@ -20,6 +20,10 @@ Feel free to get in touch about anything at any time. jaywinebrenner@gmail.com
 
 This will layout pizza size options for the customer and calculate the cost. Example: Large - $10. It will also calculate user veggie and sauce inputs. Example - Large Pizza, 2 Veggies, Pesto Sauce - $18.
 
+### Gh-Pages link
+
+[LINK](https://jaywinebrenner.github.io/Code-Review-4-Pizza-Shop/)
+
 ### Technologies Used
 
  - HTML5
