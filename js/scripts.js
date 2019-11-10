@@ -6,7 +6,6 @@ function Pizza (size, sauce, veggies){
   }
 Pizza.prototype.garlic = function(veggies){
   if(this.veggies.includes("Garlic")){
-    console.log(this.veggie);
     this.price = 0;
     $("#show2").show();
     $("#show").toggle();
@@ -38,7 +37,6 @@ Pizza.prototype.costCalulator = function(size, sauce, veggies){
   }
   if (this.sauce === "Liquid Larynx") {
     this.price += 6;
-    console.log(this.sauce);
   }
   if(this.sauce === "Extra Spicy") {
     this.price += 8;
@@ -58,6 +56,13 @@ Pizza.prototype.showCost = function(price){
   $("#price-p").html("$" + this.price);
   $("#blood-hide").show();
 };
+
+
+// function playSound(name) {
+//   var audio = new Audio("sounds/" + name + ".mp3");
+//   audio.play();
+// }
+// playSound("wrong");
 
 $(document).ready(function(){
 $("#inputForm").submit(function(event){
